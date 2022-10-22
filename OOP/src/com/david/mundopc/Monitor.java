@@ -38,6 +38,6 @@ public class Monitor {
 
     @Override
     public String toString() {
-        return String.format("Marca Monitor: %s, Tamaño: %f, Entrada: %s", this.getMarca(), this.getTamanio());
+        return String.format("ID Monitor: %s, Marca Monitor: %s, Tamaño: %f", this.idMonitor, this.getMarca(), this.getTamanio());
     }
 }

@@ -22,12 +22,15 @@ public class Orden {
     }
 
     public void mostrarOrden() {
+        System.out.println("*******************************************");
+        System.out.println("Número de Orden: " + Orden.contadorOrdenes);
         System.out.println("Productos de la orden: ");
         for (Computadora computadora: computadoras) {
             if (computadora != null) {
                 System.out.println(computadora);
             }
         }
+        System.out.println("*******************************************");
 
     }
 }

@@ -6,6 +6,7 @@ public class Mouse extends DispositivoEntrada{
 
     public Mouse(String tipoEntrada, String marca) {
         super(tipoEntrada, marca);
+
     }
     {
         this.idMouse = ++Mouse.contadorMouses;
@@ -15,12 +16,10 @@ public class Mouse extends DispositivoEntrada{
         return this.idMouse;
     }
 
-    public static int getContadorMouses() {
-        return Mouse.contadorMouses;
-    }
+
 
     @Override
     public String toString() {
-        return String.format("Marca: %s, Tipo de entrada: %s", this.getMarca(), this.getTipoEntrada());
+        return String.format("ID Mouse: %d - Marca Mouse y Tipo de entrada: %s", this.idMouse, super.toString());
     }
 }

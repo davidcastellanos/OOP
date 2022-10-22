@@ -4,9 +4,12 @@ public class Teclado extends DispositivoEntrada {
     private final int idTeclado;
     private static int contadorTeclados;
 
+
     public Teclado(String tipoEntrada, String marca) {
         super(tipoEntrada, marca);
+
     }
+
     {
         this.idTeclado = ++Teclado.contadorTeclados;
     }
@@ -21,6 +24,6 @@ public class Teclado extends DispositivoEntrada {
 
     @Override
     public String toString() {
-        return String.format("Marca: %s, Tipo de Entrada: %s", this.getMarca(), this.getTipoEntrada());
+        return String.format("ID Teclado: %d, Marca y Tipo de Entrada teclado: %s", this.idTeclado, super.toString());
     }
 }

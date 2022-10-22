@@ -6,7 +6,7 @@ public class Computadora {
     private Teclado teclado;
     private Monitor monitor;
     private String nombre;
-    private static int contadorCompuadores;
+    private static int contadorComputadoras;
 
     //private Computadora(){}
     public Computadora(String nombre, Monitor monitor, Teclado teclado, Mouse mouse) {
@@ -16,7 +16,7 @@ public class Computadora {
         this.mouse = mouse;
     }
     {
-        this.idComputadora = ++Computadora.contadorCompuadores;
+        this.idComputadora = ++Computadora.contadorComputadoras;
     }
 
     public int getIdComputadora() {
@@ -57,8 +57,8 @@ public class Computadora {
 
     @Override
     public String toString() {
-        return String.format("{ID: %d, Nombre: %s, Monitor: %s y Tamaño Monitor: %s, Teclado: %s y Entrada Teclado: %s, Mouse: %s y Entrada Mouse: %s}",
-                this.idComputadora, this.getNombre(), this.getMonitor().getMarca(), this.getMonitor().getTamanio(),
-                this.getTeclado().getMarca(), this.getTeclado().getTipoEntrada(),  this.getMouse().getMarca(), this.getMouse().getTipoEntrada());
+        return String.format("{ID: %d,\nNombre: %s,\nID, Marca y Tamaño Monitor:\n%s,\nTeclado y Entrada Teclado:\n %s,\nMouse y Entrada Mouse:\n %s\n}",
+                this.idComputadora, this.getNombre(), this.getMonitor().toString(),
+                this.getTeclado().toString(),  this.getMouse().toString());
     }
 }

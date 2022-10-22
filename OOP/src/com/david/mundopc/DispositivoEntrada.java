@@ -28,6 +28,6 @@ public class DispositivoEntrada {
 
     @Override
     public String toString() {
-        return String.format("Tipo entrada: %s y Marca: %s", this.getTipoEntrada(), this.getMarca());
+        return String.format("Marca: %s y Tipo entrada: %s", this.getMarca(), this.getTipoEntrada());
     }
 }

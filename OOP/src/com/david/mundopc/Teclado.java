@@ -8,7 +8,7 @@ public class Teclado extends DispositivoEntrada {
         super(tipoEntrada, marca);
     }
     {
-        idTeclado = ++Teclado.contadorTeclados;
+        this.idTeclado = ++Teclado.contadorTeclados;
     }
 
     public int getIdTeclado() {

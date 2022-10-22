@@ -1,6 +1,6 @@
 package com.david.mundopc;
 
-class DispositivoEntrada {
+public class DispositivoEntrada {
 
     private String tipoEntrada;
     private String marca;

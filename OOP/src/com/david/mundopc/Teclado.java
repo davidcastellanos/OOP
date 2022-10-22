@@ -21,6 +21,6 @@ public class Teclado extends DispositivoEntrada {
 
     @Override
     public String toString() {
-        return String.format("");
+        return String.format("Marca: %s, Tipo de Entrada: %s", this.getMarca(), this.getTipoEntrada());
     }
 }

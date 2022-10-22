@@ -57,7 +57,8 @@ public class Computadora {
 
     @Override
     public String toString() {
-        return String.format("{ID: %d, Nombre: %s, Monitor: %s, Teclado: %s, Mouse: %s }",
-                this.idComputadora, this.getNombre(), this.getMonitor().getMarca(), this.getTeclado().getMarca(), this.getMouse().getMarca());
+        return String.format("{ID: %d, Nombre: %s, Monitor: %s y Tamaño Monitor: %s, Teclado: %s y Entrada Teclado: %s, Mouse: %s y Entrada Mouse: %s}",
+                this.idComputadora, this.getNombre(), this.getMonitor().getMarca(), this.getMonitor().getTamanio(),
+                this.getTeclado().getMarca(), this.getTeclado().getTipoEntrada(),  this.getMouse().getMarca(), this.getMouse().getTipoEntrada());
     }
 }

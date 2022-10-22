@@ -21,6 +21,6 @@ public class Mouse extends DispositivoEntrada{
 
     @Override
     public String toString() {
-        return String.format("Marca: %s", this.getMarca());
+        return String.format("Marca: %s, Tipo de entrada: %s", this.getMarca(), this.getTipoEntrada());
     }
 }
